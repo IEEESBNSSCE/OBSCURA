@@ -577,22 +577,6 @@ export default function App() {
           );
         }
 
-        // 6. Glitch Section
-        ScrollTrigger.create({
-          trigger: '#gl',
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: true,
-          onUpdate: (s) => {
-            const gh = document.getElementById('gh');
-            if (gh) {
-              const p = Math.sin(s.progress * Math.PI);
-              gh.style.setProperty('--s', p * 30 * (Math.random() + 0.3) + 'px');
-              gh.style.transform = `skewX(${(Math.random() - 0.5) * p * 20}deg)`;
-            }
-          }
-        });
-
         // Marquees: skew container on scroll velocity
         ScrollTrigger.create({
           onUpdate: (s) =>
@@ -945,13 +929,6 @@ export default function App() {
               </div>
             ))}
           </div>
-        </section>
-
-        {/* Glitch Section */}
-        <section id="gl" aria-hidden="true">
-          <h2 className="d" data-t="BREAKING" id="gh">
-            BREAKING
-          </h2>
         </section>
 
         {/* Challenges Grid Section */}
