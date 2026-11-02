@@ -2062,6 +2062,12 @@ section:not(.pin) :is(h2, p, .mo) {
     font-size: 11px;
   }
 
+  .footer-simple-copy {
+    width: 100%;
+    text-align: center;
+    padding-top: 4px;
+  }
+
   /* Marquee */
   .mq {
     padding: 10px 0;
