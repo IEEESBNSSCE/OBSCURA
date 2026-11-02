@@ -1203,6 +1203,18 @@ export default function App() {
             <span className="mo footer-simple-label">HOSTED BY</span>
             <div className="footer-simple-logos">
               <a
+                href="https://www.ieee.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="IEEE"
+              >
+                <img
+                  src={ieeeLogo}
+                  alt="IEEE"
+                  className="footer-simple-logo-img logo-ieee"
+                />
+              </a>
+              <a
                 href="https://www.nssce.ac.in"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1238,18 +1250,7 @@ export default function App() {
                   className="footer-simple-logo-img logo-ieee-cs"
                 />
               </a>
-              <a
-                href="https://www.ieee.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="IEEE"
-              >
-                <img
-                  src={ieeeLogo}
-                  alt="IEEE"
-                  className="footer-simple-logo-img logo-ieee"
-                />
-              </a>
+              
             </div>
           </div>
         </div>
